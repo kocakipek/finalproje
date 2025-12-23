@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  /* Varsayılan boşlukları sil */
+
+  background: #f4e4d6;
+  /* Gece laciverti arka plan */
+
+  color: #ffffff;
+  /* Genel yazı rengi */
+
+  font-family: system-ui, ;
+  /* Modern yazı tipi */
+}
+
+/* =====================
+     NAVBAR
+===================== */
+
+.navbar {
+    background-color: #887d69;
+  
+  height: 110px;
+  /* Navbar yüksekliği */
+
+  padding: 0 50px;
+  /* Sağ-sol boşluk */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* İçerik düzeni */
+
+  border-bottom: 1px solid rgba(228, 54, 219, 0.3);
+  /* Altın tonlu ince çizgi */
+
+  position: relative;
+  /* Logoyu ortaya alabilmek için referans */
+}
+
+.navbar-logo {
+  display: flex;
+  /* Yazı + yıldız yan yana durur (istersen yıldız ekleriz) */
+
+  gap: 8px;
+  /* Eleman arası boşluk */
+
+  letter-spacing: 0.25rem;
+  /* Harf arası açıklık */
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Logoyu ortaya sabitler */
+
+  font-size: 1.7rem;
+  /* Logo boyutu */
+}
+
+
+.navbar-links {
+    
+  display: flex;
+  gap: 24px;
+  /* Linkler arası mesafe */
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #f5c453;
+  /* Hover’da altın tonuna kayma */
+}
+
+.site-header {
+  position: relative;
+  padding: 5px;
+}
+/* ---- ZATEN GÖNDERDİĞİN NAVBAR KODLARI BURADA KALACAK ---- */
+
+
+/* =====================
+      ŞUBELER BÖLÜMÜ
+===================== */
+
+.subeler {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.baslik {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.sube-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+
+/* Her Şube Kutusu */
+.sube {
+    width: 40%;
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Ortadaki çizgi */
+.divider {
+    width: 2px;
+    background: #444;
+}
+
+/* Harita */
+.map {
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Mobil uyum */
+@media(max-width: 900px) {
+    .sube-container {
+        flex-direction: column;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .sube {
+        width: 100%;
+    }
+}
