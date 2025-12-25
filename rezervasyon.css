@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    background: #f4e4d6;
+    font-family: system-ui;
+}
+
+.rezervasyon {
+    max-width: 500px;
+    background: #fff;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.rezervasyon h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #6f6555}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #887d69;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6f6555;
+}
+
+.sonuc {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f7f4ef;
+    border-radius: 10px;
+    display: none;
+    font-size: 14px;
+}
+
+
+body {
+  margin: 0;
+
+  background: #f4e4d6;
+ 
+
+  color: #ffffff;
+  
+
+  font-family: system-ui, ;
+ 
+}
+
+/* =====================
+     NAVBAR
+===================== */
+
+.navbar {
+  background-color: #887d69;
+  
+  height: 110px;
+  /* Navbar yüksekliği */
+
+  padding: 0 50px;
+  /* Sağ-sol boşluk */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* İçerik düzeni */
+
+  border-bottom: 1px solid #887d69;
+  /* Altın tonlu ince çizgi */
+
+  position: relative;
+  /* Logoyu ortaya alabilmek için referans */
+}
+
+.navbar-logo {
+  display: flex;
+  /* Yazı + yıldız yan yana durur (istersen yıldız ekleriz) */
+
+  gap: 8px;
+  /* Eleman arası boşluk */
+
+  letter-spacing: 0.25rem;
+  /* Harf arası açıklık */
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Logoyu ortaya sabitler */
+
+  font-size: 1.7rem;
+  /* Logo boyutu */
+}
+
+
+.navbar-links {
+    
+  display: flex;
+  gap: 24px;
+ 
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #f5c453;
+  
+}
+
+.site-header {
+  position: relative;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #887d69; 
+
+  border-top: 1px solid rgba(245, 196, 83, 0.3);
+  margin-top: 700px; 
+}
