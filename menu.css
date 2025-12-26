@@ -1,0 +1,92 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: #f4e4d6;
+    color: #000000;
+    font-family: system-ui, ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.navbar {
+    background-color: #887d69;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 30px;
+    height: 110px;
+    gap: 16px;
+    border-bottom: 1px solid rgba(228, 54, 219, 0.3);
+}
+
+.navbar-logo {
+    order: 2;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.7rem;
+    white-space: nowrap;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 14px;
+    margin-right: 0;
+    order: 1;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 110px;
+}
+
+.nav-link:hover {
+    color: #f5c453;
+}
+
+.site-header {
+    position: relative;
+    padding: 5px;
+}
+
+
+
+@media (max-width: 900px) {
+
+.hakkimizda {
+    width: 80%;
+}
+
+.hakkimizda-container {
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 0 14px;
+    gap: 8px;
+}
+
+.navbar-links {
+    gap: 10px;
+    order: 1;
+}
+
+.navbar-logo {
+    font-size: 1.3rem;
+    position: static;
+    transform: none;
+    margin-left: auto;
+    order: 2;
+    right: 20px;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+}
