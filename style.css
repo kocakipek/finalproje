@@ -12,48 +12,46 @@ body {
   /* Modern yazı tipi */
 }
 
-/* =====================
-     NAVBAR
-===================== */
+
 
 .navbar {
   background-color: #887d69;
   
   height: 110px;
-  /* Navbar yüksekliği */
+ 
 
   padding: 0 50px;
-  /* Sağ-sol boşluk */
+ 
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* İçerik düzeni */
+  
 
   border-bottom: 1px solid #887d69;
-  /* Altın tonlu ince çizgi */
+  
 
   position: relative;
-  /* Logoyu ortaya alabilmek için referans */
+ 
 }
 
 .navbar-logo {
   display: flex;
-  /* Yazı + yıldız yan yana durur (istersen yıldız ekleriz) */
+  
 
   gap: 8px;
-  /* Eleman arası boşluk */
+ 
 
   letter-spacing: 0.25rem;
-  /* Harf arası açıklık */
+  
 
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* Logoyu ortaya sabitler */
+
 
   font-size: 1.7rem;
-  /* Logo boyutu */
+
 }
 
 
@@ -61,7 +59,7 @@ body {
     
   display: flex;
   gap: 24px;
-  /* Linkler arası mesafe */
+  
 }
 
 .nav-link {
@@ -74,7 +72,7 @@ body {
 
 .nav-link:hover {
   color: #f5c453;
-  /* Hover’da altın tonuna kayma */
+
 }
 
 .site-header {
@@ -87,8 +85,8 @@ body {
   padding: 10px 0;
   text-align: center;
   font-size: 0.9rem;
-  color: #887d69; /* hafif soluk beyaz */
+  color: #887d69; 
 
-  border-top: 1px solid rgba(245, 196, 83, 0.3); /* altın ince çizgi */
-  margin-top: 700px; /* üstten boşluk */
+  border-top: 1px solid rgba(245, 196, 83, 0.3); 
+  margin-top: 700px; 
 }

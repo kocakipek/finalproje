@@ -25,87 +25,133 @@
 }
 
 .menu-content {
-  display: none;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px;
 }
+
 
 .menu-content.active {
   display: grid;
 }
 
 .menu-card {
-  background: #ddd;
-  border-radius: 22px;
-  padding: 22px;
-  text-align: center;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  background: #f7f4ef;
+  border-radius: 18px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;   /* 🔥 KARE YAPAR */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: transform .3s ease;
 }
+
+.menu-card h3 {
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
 
 .menu-img {
-  height: 200px;
+  flex: 1;
   background: #ddd;
-  border-radius: 16px;
-  margin-bottom: 14px;
 }
 
+.menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* foto taşmaz */
+}
+
+
+
+
+
 .navbar {
-    background-color: #887d69;
+  background-color: #887d69;
   
   height: 110px;
-  /* Navbar yüksekliği */
+ 
 
-  padding: 0 30px;
-  /* Sağ-sol boşluk */
+  padding: 0 50px;
+ 
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  /* İçerik düzeni */
-  gap: 16px;
-  border-bottom: 1px solid rgba(228, 54, 219, 0.3);
-  /* Altın tonlu ince çizgi */
+  justify-content: space-between;
+  
+
+  border-bottom: 1px solid #887d69;
+  
 
   position: relative;
-  /* Logoyu ortaya alabilmek için referans */
+ 
 }
 
 .navbar-logo {
   display: flex;
-  /* Yazı + yıldız yan yana durur (istersen yıldız ekleriz) */
+  
+
+  gap: 8px;
+ 
 
   letter-spacing: 0.25rem;
-  /* Harf arası açıklık */
+  
 
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* Logoyu ortaya sabitler */
+
 
   font-size: 1.7rem;
-  /* Logo boyutu */
-  white-space: nowrap;
+
 }
 
 
 .navbar-links {
     
   display: flex;
-  gap: 14px;
-  /* Linkler arası mesafe */
+  gap: 24px;
+  
 }
 
 .nav-link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.1rem;
-  line-height: 110px;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  transition: 0.2s ease;
 }
 
 .nav-link:hover {
   color: #f5c453;
-  /* Hover’da altın tonuna kayma */
+
 }
+
+.site-header {
+  position: relative;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #887d69; 
+
+  border-top: 1px solid rgba(245, 196, 83, 0.3); 
+  margin-top: 700px; 
+}v
 
 .site-header {
   position: relative;
