@@ -175,3 +175,82 @@ body {
       line-height: normal;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background: #887d69;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer h3 {
+  letter-spacing: 0.25rem;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.footer p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.footer a:hover {
+  opacity: 1;
+  color: #f5c453;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  background: rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
