@@ -25,11 +25,12 @@
 }
 
 .menu-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: none;               
+  grid-template-columns: repeat(4, 1fr); 
   gap: 30px;
   padding: 40px;
 }
+
 
 
 .menu-content.active {
@@ -37,15 +38,16 @@
 }
 
 .menu-card {
+  aspect-ratio: 1 / 1;
   background: #f7f4ef;
   border-radius: 18px;
   overflow: hidden;
-  aspect-ratio: 1 / 1;   /* 🔥 KARE YAPAR */
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  transition: transform .3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
 }
+
+
 
 .menu-card h3 {
   margin: 0;
@@ -148,10 +150,9 @@
   text-align: center;
   font-size: 0.9rem;
   color: #887d69; 
-
   border-top: 1px solid rgba(245, 196, 83, 0.3); 
   margin-top: 700px; 
-}v
+}
 
 .site-header {
   position: relative;
@@ -185,3 +186,4 @@
   border-radius: 18px;
   margin-bottom: 20px;
 }
+
