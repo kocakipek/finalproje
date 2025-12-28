@@ -1,337 +1,320 @@
 body {
-    height: 100%;
-    margin: 0;
-    background: #f4e4d6;
-    color: #000000;
-    font-family: system-ui, ;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+height: 100%;
+margin: 0;
+background: #f4e4d6;
+color: #000000;
+font-family: system-ui, sans-serif;
+display: flex;
+flex-direction: column;
+min-height: 100%;
 }
 
-.navbar {
-    background-color: #887d69;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0px 30px;
-    height: 110px;
-    gap: 16px;
-    border-bottom: 1px solid rgba(228, 54, 219, 0.3);
+.navbar{
+background-color: #887d69;
+position: relative;
+display: flex;
+align-items: center;
+padding: 0px 30px;
+height: 110px;
+gap: 16px;
+border-bottom: 1px solid rgba(228, 54, 219, 0.3);
 }
 
 .navbar-logo {
-    order: 2;
-    color: white;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.7rem;
-    white-space: nowrap;
+order: 2;
+color: white;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+font-size: 1.7rem;
+white-space: nowrap;
 }
 
 .navbar-links {
-    display: flex;
-    gap: 14px;
-    margin-right: 0;
-    order: 1;
+display: flex;
+gap: 14px;
+margin-right: 0;
+order: 1;
 }
 
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    line-height: 110px;
+.nav-link{
+color: #fff;
+text-decoration: none;
+font-size: 1.2rem;
+line-height: 110px;
 }
 
 .nav-link:hover {
-    color: #f5c453;
+color: #f5c453;
 }
 
 .site-header {
-    position: relative;
-    padding: 5px;
+position: relative;
+padding: 5px ;
 }
-
-/* =====================
-      Hakkımızda Bölümü
-===================== */
-
+ 
 .hakkimizda {
-    padding: 20px 60px;
-    text-align: justify;
-    margin: 20px auto;
-    width: 95%;
-    background: #f7f4ef;
-    border-radius: 12px;
-    color: #333333;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.hakkimizda-container {
-    display: flex;
-    justify-content: justify;
-    gap: 40px;
-    position: relative;
+padding: 20px 60px;
+text-align: justify;
+margin: 20px auto;
+width: 95%;
+background: #f7f4ef;
+border-radius: 12px;
+color: #333333;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .baslik {
-    font-size: 2rem;
-    color: #000000;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-/* =====================
-      Footer Bölümü
-===================== */
-
-.footer {
-    background: #887d69;
-    color: #fff;
-    padding: 60px 40px;
-    min-height: 200px;
-}
-
-.footer-main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 100px;
-}
-
-.footer-brand {
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-brand h2 {
-    font-size: 38px;
-    letter-spacing: 2px;
-    color: #fff;
-    margin-bottom: 2px;
-}
-
-.footer-brand p {
-    font-size: 12px;
-    margin: 0 0 6px;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.footer-brand span {
-    font-size: 13px;
-    color: #f5f1ea;
-}
-
-.footer-copy {
-    margin-top: 10px;
-    border-top: 0.5px solid #fff;
-    padding-top: 4px;
-    color: #f5f1ea;
-}
-
-.footer-copy p {
-    margin: 0;
-    white-space: nowrap;
-}
-
-.footer h4 {
-    font-size: 13px;
-    letter-spacing: 1px;
-    margin-bottom: 14px;
-    color: #fff;
-}
-
-.hours-row {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    width: 280px;
-    margin-bottom: 6px;
-    color: #fff;
-}
-
-.footer-middle {
-    display: flex;
-    gap: 80px;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.footer-contact, .footer-hours {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer-contact p {
-    font-size: 13px;
-    margin: 6px 0;
-    color: #fff;
-    width: 260px;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: auto;
-    margin-top: -150px;
-}
-
-.footer-links a {
-    font-size: 15px;
-    margin-bottom: 16px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #f5f1ea;
-}
-
-.footer-links a.active {
-    color: #c9a76a;
-    font-weight: 600;
-}
-
-@media (max-width: 900px) {
-
-.hakkimizda {
-    width: 80%;
+font-size: 2rem;
+color: #000000;
+margin-bottom: 40px;
+position: relative;
 }
 
 .hakkimizda-container {
-    flex-direction: column;
+display: flex;
+justify-content: justify;
+gap: 40px;
+position: relative;
+ }
+
+
+/*FOOTER*/
+.footer {
+  background: #887d69;
+  color: #fff;
+  padding: 40px 80px 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 200px;  
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.navbar {
-    padding: 0 14px;
+.footer-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 40px;
+}
+
+.footer-copy {
+  max-width: 100px;
+  display: block;
+  flex-direction: column;
+  gap: 6px;
+ }
+
+ .footer-copy p{
+  margin: 0;
+  white-space: nowrap;
+  font-size: 10px;
+  color: #fff;
+ }
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+ }
+
+ .footer-links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+ }
+
+ .footer-links a:hover {
+  color: #c9a76a;
+ }
+
+ .footer-links a.active {
+  color: #c9a76a;
+  font-weight: 600;
+ }
+
+.footer-brand{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+ }
+
+.footer-brand h2{
+  font-size: 38px;
+  margin: 0;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.footer-brand p{
+  font-size: 12px;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.footer-brand span {
+  font-size: 13px;
+  color: #f5f1ea;
+}
+
+/* Orta: Çalışma Saatleri ve İletişim */
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 0;
+}
+
+.footer-hours{
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
 
-.navbar-links {
-    gap: 10px;
-    order: 1;
+.footer-hours,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.navbar-logo {
+.hours-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hours-row span{
+    line-height: 1.4;
+}
+
+.footer-contact p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+ 
+.navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-logo {
     font-size: 1.3rem;
     position: static;
     transform: none;
     margin-left: auto;
-    order: 2;
-    right: 20px;
-}
+  }
 
-.nav-link {
+  .nav-link {
     font-size: 1rem;
-}
+  }
 
- /* ---------- FOOTER ---------- */
+  /* =====================
+     HAKKIMIZDA
+  ===================== */
 
-.footer {
-    padding: 20px 40px 20px;
-}
+  .hakkimizda {
+    width: 90%;
+    padding: 20px;
+  }
 
-.footer-main {
+  .hakkimizda-container {
     flex-direction: column;
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* =====================
+     FOOTER
+  ===================== */
+
+  .footer {
+    padding: 30px 20px 20px;
+  }
+
+  .footer-main {
+    flex-wrap: nowrap;
+
+  }
+
+  /* 🔽 SADECE BURASI ÖNEMLİ */
+  .footer-center {
+  display: flex;
+  flex-direction: column;   /* ✅ ALT ALTA */
+  gap: 16px;
+  flex: 1 1 auto;
+  min-width: 0;
+  align-items: center;
 }
 
-.footer-middle {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
+  .footer-hours,
+  .footer-contact {
+    font-size: 10px;
+    white-space: nowrap;
+  }
 
-.footer-hours {
-    order: 1;
-    text-align: left;
-}
+  .footer-hours h4,
+  .footer-contact h4 {
+    font-size: 10px;
+  } 
 
-.footer-contact {
-    order: 2;
-    text-align: left;
-}
+  .hours-row {
+    width: auto;
+    font-size: 10px;
+  }
 
-/* 🔽 FOOTER BRAND */
+  /* =====================
+     FOOTER BRAND
+  ===================== */
 
-.footer-brand {
-    max-width: 180px;
-    text-align: center;
-    margin: 0 auto;
-}
+  .footer-brand {
+    flex-shrink: 0;
+  }
 
-.footer-brand h2 {
-    font-size: 28px;
-}
+  .footer-brand h2 {
+    font-size: 26px;
+  }
 
-.footer h4 {
-    font-size: 11px;
-}
+  .footer-brand p,
+  .footer-brand span {
+    font-size: 12px;
+  }
 
-.hours-row {
-    font-size: 11px;
-}
+  /* =====================
+     FOOTER LINKS
+  ===================== */
 
-.footer-contact p {
-    font-size: 11px;
-}
+  .footer-links {
+    flex-shrink: 0;
+  }
 
-.footer-brand p {
-    font-size: 11px;
-}
+  .footer-links a {
+    font-size: 12px;
+  }
 
-.footer-brand span {
-    font-size: 11px;
-}
+  /* =====================
+     FOOTER COPY
+  ===================== */
 
-/* 🔽 FOOTER COPY (TEK SATIR + KÜÇÜK) */
-
-.footer-copy{
-    color: #f5f1ea;                  /* Yazı rengi */
-    border-top: 1px solid #fff;      /* Üst çizgi */
-    width: 220px;                      /* Çizgi uzunluğu */
-    text-align: left;                  /* Yazı ve çizgi sola hizalı */
-    font-size: 2px;                    /* Yazı boyutu */
-    line-height: 1.2;                  /* Satır yüksekliği */
-    letter-spacing: 0.25px;            /* Harf aralığı */
-    margin-top: 4px;                   /* Üstten boşluk */
-    padding-top: 2px;                  /* İçten boşluk */
-    white-space: nowrap;            
-}
-
-.footer-copy p {
-    font-size: 8px;
-    line-height: 1.1;
-}
-
-.footer-brand {
-    margin-top: 8px;
-    padding-top: 4px;
-    font-size: 6px;
-    letter-spacing: 0.25px;
+  .footer-copy {
     width: 100%;
     text-align: center;
-    line-height: 1.2;
-    white-space: nowrap;   /* ✅ satır kırılmasını engeller */
-    margin: 0;
-}
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin-top: 20px;
+    padding-top: 10px;
+  }
 
-.hours-row {
-    flex-direction: column;
-    gap: 4px;
-}
-}
-
-
-
-
-
-
+  .footer-copy p {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+} 
