@@ -6,7 +6,7 @@ color: #000000;
 font-family: system-ui, sans-serif;
 display: flex;
 flex-direction: column;
-min-height: 100%;
+min-height: 100vh;
 }
 
 .navbar{
@@ -83,12 +83,13 @@ position: relative;
 .footer {
   background: #887d69;
   color: #fff;
-  padding: 40px 80px 20px;
+  padding: 20px 60px 10px;
   font-family: "Segoe UI", Arial, sans-serif;
   min-height: 200px;  
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: auto;
 }
 
 .footer-main{
@@ -100,16 +101,20 @@ position: relative;
 }
 
 .footer-copy {
-  max-width: 100px;
-  display: block;
-  flex-direction: column;
-  gap: 6px;
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 12px;
+  position: relative;
+
+  text-align: left;
+  align-self: flex-start;
  }
 
  .footer-copy p{
   margin: 0;
   white-space: nowrap;
-  font-size: 10px;
+  font-size: 15px;
+  line-height: 1.5;
   color: #fff;
  }
 
@@ -118,6 +123,7 @@ position: relative;
   flex-direction: column;
   align-items: flex-end;
   gap: 16px;
+  margin-top: -10px;
  }
 
  .footer-links a {
@@ -248,12 +254,10 @@ position: relative;
 
   /* 🔽 SADECE BURASI ÖNEMLİ */
   .footer-center {
-  display: flex;
-  flex-direction: column;   /* ✅ ALT ALTA */
-  gap: 16px;
-  flex: 1 1 auto;
-  min-width: 0;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
 }
 
   .footer-hours,
@@ -314,7 +318,10 @@ position: relative;
   }
 
   .footer-copy p {
-    font-size: 10px;
+    font-size: 13px;
     white-space: nowrap;
   }
+
+
+  
 } 
