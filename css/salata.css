@@ -178,3 +178,34 @@ body {
     padding: 12px;
   }
 }
+
+
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* SALATA FOTOĞRAFLARI */
+.menu-img.roka {
+  background-image: url("../salata.images/roka.jpeg");
+}
+
+.menu-img.sezar {
+  background-image: url("../salata.images/sezar.jpg");
+}
+
+.menu-img.bowl {
+  background-image: url("../salata.images/bowl.jpeg");
+}
+
+.menu-img.keci {
+  background-image: url("../salata.images/keci.jpg");
+}
+
+.menu-img.akdeniz {
+  background-image: url("../salata.images/akdeniz.jpeg");
+}
+
+.menu-img.somon {
+  background-image: url("../salata.images/somonlu.jpeg");
+}

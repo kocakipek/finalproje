@@ -253,28 +253,34 @@
   background-position: center;
 }
 
-/* KATEGORİ FOTOĞRAFLARI */
 .kategori-img.salata {
   background-image: url("../images/somonlu.jpeg");
 }
+
 .kategori-img.biftek {
   background-image: url("../images/bifftek.jpg");
 }
+
 .kategori-img.makarna {
-  background-image: url("../images/pesto makarna.jpeg");
+  background-image: url("../images/pesto.jpeg");
 }
+
 .kategori-img.pizza {
   background-image: url("../images/margherita.jpg");
 }
+
 .kategori-img.atistirmalik {
   background-image: url("../images/mozzarellasticks.jpeg");
 }
+
 .kategori-img.tatli {
   background-image: url("../images/cremebrulee.jpeg");
 }
+
 .kategori-img.icecek {
   background-image: url("../images/espresso.webp");
 }
+
 .kategori-img.burger {
   background-image: url("../images/classicbef.jpeg");
 }

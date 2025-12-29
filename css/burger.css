@@ -196,3 +196,33 @@ body {
     padding: 12px;
   }
 }
+
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* BURGER FOTOĞRAFLARI */
+.menu-img.beef {
+  background-image: url("../burger.images/classicbef.jpeg");
+}
+
+.menu-img.truffle {
+  background-image: url("../burger.images/truffle.jpeg");
+}
+
+.menu-img.smoky {
+  background-image: url("../burger.images/smoky.jpg");
+}
+
+.menu-img.mushroom {
+  background-image: url("../burger.images/mushroomswiss.jpg");
+}
+
+.menu-img.double {
+  background-image: url("../burger.images/double.jpg");
+}
+
+.menu-img.crispy {
+  background-image: url("../burger.images/crispy.jpeg");
+}

@@ -117,3 +117,33 @@ body {
 
   transition: transform .15s ease, border-color .15s ease, background .15s ease;
 }
+
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* ICECEK FOTOĞRAFLARI */
+.menu-img.espresso {
+  background-image: url("../icecek.images/espresso.webp");
+}
+
+.menu-img.latte {
+  background-image: url("../icecek.images/latte.jpeg");
+}
+
+.menu-img.mojito {
+  background-image: url("../icecek.images/mojito.webp");
+}
+
+.menu-img.negroni {
+  background-image: url("../icecek.images/negroni.jpg");
+}
+
+.menu-img.meyve {
+  background-image: url("../icecek.images/portakal.jpg");
+}
+
+.menu-img.cay {
+  background-image: url("../icecek.images/cay.jpg");
+}

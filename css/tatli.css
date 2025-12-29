@@ -178,3 +178,33 @@ body {
     padding: 12px;
   }
 }
+
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* TATLILAR FOTOĞRAFLARI */
+.menu-img.san {
+  background-image: url("../tatli.images/sansebastian.jpg");
+}
+
+.menu-img.tiramisu {
+  background-image: url("../tatli.images/tiramisu.webp");
+}
+
+.menu-img.sufle {
+  background-image: url("../tatli.images/sufle.png");
+}
+
+.menu-img.panna {
+  background-image: url("../tatli.images/panna.jpeg");
+}
+
+.menu-img.creme{
+  background-image: url("../tatli.images/cremebrulee.jpeg");
+}
+
+.menu-img.profiterol {
+  background-image: url("../tatli.images/profiterol.webp");
+}
