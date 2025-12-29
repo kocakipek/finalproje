@@ -1,5 +1,4 @@
 body {
-height: 100%;
 margin: 0;
 background: #f4e4d6;
 color: #000000;
@@ -7,6 +6,7 @@ font-family: system-ui, sans-serif;
 display: flex;
 flex-direction: column;
 min-height: 100vh;
+margin-top: auto;
 }
 
 .navbar{
@@ -54,7 +54,7 @@ padding: 5px ;
 }
  
 .hakkimizda {
-padding: 20px 60px;
+padding: 20px 60px 60px;
 text-align: justify;
 margin: 20px auto;
 width: 95%;
@@ -73,10 +73,50 @@ position: relative;
 
 .hakkimizda-container {
 display: flex;
-justify-content: justify;
 gap: 40px;
+align-items: flex-start;
 position: relative;
- }
+}
+
+.hakkimizda-text {
+  flex: 1;
+}
+
+.hakkimizda-img {
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.hakkimizda-img img {
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.extra-image{
+  width: 100%;
+  margin: 60px 0;
+}
+
+.extra-image-left {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 260px;
+}
+
+.extra-image-left .extra-image-box {
+  width: 45%;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.extra-image-left img {
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border-radius: 16px;
+}
+
 
 
 /*FOOTER*/
@@ -102,12 +142,9 @@ position: relative;
 
 .footer-copy {
   width: 100%;
-  margin-top: 16px;
+  margin-top: auto;
   padding-top: 12px;
-  position: relative;
-
   text-align: left;
-  align-self: flex-start;
  }
 
  .footer-copy p{
@@ -325,3 +362,25 @@ position: relative;
 
   
 } 
+
+.hero-slider {
+  width: 100%;
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hero-slider img.active {
+  opacity: 1;
+}
