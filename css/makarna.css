@@ -208,3 +208,26 @@ body {
 .menu-img.carbonara {
   background-image: url("../makarna.images/carbonara.jpg");
 }
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 30px;
+  padding: 14px 28px;
+
+  background-color: #9a8f7a;
+  color: #f3c86a;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #887d69;
+  transform: translateX(-4px);
+}
