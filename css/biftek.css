@@ -196,3 +196,31 @@ body {
   }
 }
 
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* FOTOĞRAFLAR */
+.menu-img.ribeye {
+  background-image: url("../biftek.images/ribeye steak.jpg");
+}
+
+.menu-img.bonfile {
+  background-image: url("../biftek.images/bonfile.jpg");
+}
+
+.menu-img.dallas {
+  background-image: url("../biftek.images/dallassteak.png");
+}
+
+.menu-img.tbone {
+  background-image: url("../biftek.images/tbone.jpg");
+}
+.menu-img.newyorksteak {
+  background-image: url("../biftek.images/newyorksteak.jpeg");
+}
+
+.menu-img.tomahawk {
+  background-image: url("../biftek.images/tomahawk.jpeg");
+}
