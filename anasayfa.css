@@ -6,7 +6,7 @@ font-family: system-ui, sans-serif;
 display: flex;
 flex-direction: column;
 min-height: 100vh;
-margin-top: auto;
+
 }
 
 .navbar{
@@ -16,7 +16,6 @@ display: flex;
 align-items: center;
 padding: 0px 30px;
 height: 110px;
-gap: 16px;
 border-bottom: 1px solid rgba(228, 54, 219, 0.3);
 }
 
@@ -32,9 +31,7 @@ white-space: nowrap;
 
 .navbar-links {
 display: flex;
-gap: 14px;
-margin-right: 0;
-order: 1;
+gap: 16px;
 }
 
 .nav-link{
@@ -48,48 +45,33 @@ line-height: 110px;
 color: #f5c453;
 }
 
-.site-header {
-position: relative;
-padding: 5px ;
-}
- 
+
 .hakkimizda {
-padding: 20px 60px 60px;
-text-align: justify;
-margin: 20px auto;
-width: 95%;
+padding: 60px;
+margin: 40px 0;
+width: 100%;
 background: #f7f4ef;
 border-radius: 12px;
 color: #333333;
 box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+overflow: hidden;
 }
 
 .baslik {
 font-size: 2rem;
 color: #000000;
 margin-bottom: 40px;
-position: relative;
-}
-
-.hakkimizda-container {
-display: flex;
-gap: 40px;
-align-items: flex-start;
-position: relative;
-}
-
-.hakkimizda-text {
-  flex: 1;
 }
 
 .hakkimizda-img {
-  margin-left: auto;
-  margin-right: 60px;
+  flex-shrink: 0;
+  margin-left: 20px;
 }
 
+
 .hakkimizda-img img {
-  width: 300px;
-  border-radius: 16px;
+  width: 320px;
+  border-radius: 18px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
@@ -115,6 +97,46 @@ position: relative;
   width: 100%;
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
   border-radius: 16px;
+}
+
+.hakkimizda-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hakkimizda-text {
+  flex: 1;
+  max-width: 600px;
+  margin-left: 40px;
+  padding-top: 24px;
+}
+
+.hakkimizda-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0 ;
+  width: 70px;
+  height:3px;
+  background-color: #887d69;
+  border-radius: 2px
+}
+
+.hakkimizda-text p {
+  font-family: "poppins", sans-serif;
+  font-size: 15.5px;
+  line-height: 1.9;
+  color: #444;
+  letter-spacing: 0.3px;
+}
+
+
+.hakkimizda-img img {
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  margin-left: 100px;
 }
 
 
@@ -245,35 +267,41 @@ position: relative;
   font-size: 13px;
 }
 
+
+/* =====================
+   RESPONSIVE
+===================== */
 @media (max-width: 900px) {
- 
-.navbar {
+
+  /* NAVBAR */
+  .navbar {
     padding: 0 16px;
   }
 
   .navbar-logo {
-    font-size: 1.3rem;
     position: static;
     transform: none;
     margin-left: auto;
+    font-size: 1.3rem;
   }
 
   .nav-link {
     font-size: 1rem;
   }
 
-  /* =====================
-     HAKKIMIZDA
-  ===================== */
-
+  /* HAKKIMIZDA */
   .hakkimizda {
-    width: 90%;
     padding: 20px;
   }
 
-  .hakkimizda-container {
-    flex-direction: column;
-    gap: 20px;
+  .hakkimizda-row{
+    flex-direction: row;
+    gap: 16px;
+    }
+
+  .hakkimizda-img img {
+    width: 100%;
+    max-width: 150px;
   }
 
   /* =====================
@@ -359,6 +387,37 @@ position: relative;
     white-space: nowrap;
   }
 
+   /* =====================
+   MOBİLDE ZİGZAG (KESİN)
+===================== */
+
+.hakkimizda-row {
+  flex-direction: row;   /* mobilde de yan yana */
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 1. satır → yazı solda, foto sağda */
+.hakkimizda-row:nth-of-type(1) .hakkimizda-text {
+  order: 1;
+  padding-left: 15px;
+}
+
+.hakkimizda-row:nth-of-type(1) .hakkimizda-img {
+  order: 2;
+}
+
+/* 2. satır → foto solda, yazı sağda */
+.hakkimizda-row:nth-of-type(2) .hakkimizda-img {
+  order: 1;
+  margin-left: -12px;
+}
+
+.hakkimizda-row:nth-of-type(2) .hakkimizda-text {
+  order: 2;
+}
 
   
 } 
@@ -375,12 +434,15 @@ position: relative;
   height: 100%;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   opacity: 0;
   transition: opacity 1s ease;
 }
 
 .hero-slider img.active {
   opacity: 1;
+}
+
+.kaydir {
+  transform: translateX(-80px);
 }
