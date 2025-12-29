@@ -178,3 +178,33 @@ body {
     padding: 12px;
   }
 }
+
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAKARNA FOTOĞRAFLARI */
+.menu-img.truflu {
+  background-image: url("../makarna.images/truflu.jpeg");
+}
+
+.menu-img.seafood {
+  background-image: url("../makarna.images/seafood.jpg");
+}
+
+.menu-img.ragu {
+  background-image: url("../makarna.images/beefragu.jpeg");
+}
+
+.menu-img.pesto {
+  background-image: url("../makarna.images/pesto.jpeg");
+}
+
+.menu-img.cheese {
+  background-image: url("../makarna.images/cheese.jpeg");
+}
+
+.menu-img.carbonara {
+  background-image: url("../makarna.images/carbonara.jpg");
+}

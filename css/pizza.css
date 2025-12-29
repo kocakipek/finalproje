@@ -178,3 +178,33 @@ body {
     padding: 12px;
   }
 }
+
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* PIZZA FOTOĞRAFLARI */
+.menu-img.margherita {
+  background-image: url("../pizza.images/margheritapizza.jpeg");
+}
+
+.menu-img.burrata {
+  background-image: url("../pizza.images/truffle.jpeg");
+}
+
+.menu-img.parma {
+  background-image: url("../pizza.images/prosciutto.jpeg");
+}
+
+.menu-img.cheese {
+  background-image: url("../pizza.images/cheesepizza.jpg");
+}
+
+.menu-img.seafood {
+  background-image: url("../pizza.images/seafoodpizza.jpeg");
+}
+
+.menu-img.pepperoni {
+  background-image: url("../pizza.images/pepperonipizza.jpeg");
+}

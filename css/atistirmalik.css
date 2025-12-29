@@ -178,3 +178,33 @@ body {
     padding: 12px;
   }
 }
+
+.menu-img {
+  background-size: cover;
+  background-position: center;
+}
+
+/* ATISTIRMALIK FOTOĞRAFLARI */
+.menu-img.patates {
+  background-image: url("../atistirmalik.images/truflupatates.jpg");
+}
+
+.menu-img.halka {
+  background-image: url("../atistirmalik.images/halkasi.jpg");
+}
+
+.menu-img.nachos {
+  background-image: url("../atistirmalik.images/nachos.webp");
+}
+
+.menu-img.bites {
+  background-image: url("../atistirmalik.images/bites.jpeg");
+}
+
+.menu-img.stick {
+  background-image: url("../atistirmalik.images/mozzarellasticks.jpeg");
+}
+
+.menu-img.sliders {
+  background-image: url("../atistirmalik.images/mini.jpg");
+}
